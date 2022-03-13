@@ -1,0 +1,21 @@
+num_subs,45_min_views,num_comments,last_video_up,likes,prob
+1200,2500,18,4,0.2,0.7
+1200,500,25,3,0.45,0.7
+100000,4000,17,3,0.1,0.7
+600000,2000,15,5,0.6,0.85
+1200,200,6,1,0.3,0.08
+50000,1000,25,2,0.33,0.8
+1200,4000,3,4,0.2,0.01
+1200,4000,3,1,0.9,0.1
+5000,2000,40,6,0.1,0.9
+
+* Subir repo a github
+* Ordenador Antiguo descargar repositorio
+* Hacer una monitorizacion de 1 semana, de todos los canales en los que estoysuscrito
+* Comprobar en todos ellos, las estadísticas de arriba
+* Me saldrá una lista enorme de tuplas, a las que o tendré que asignar probabilidad para luego hacer la regresión
+
+* Me viene bien porque pruebo el tema de las pestañas y de la monitrización continua.
+* Me viene bien porque ya saco mi archivo con el que luego calcular proabilidades de comentario
+
+
