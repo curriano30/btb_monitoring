@@ -18,7 +18,7 @@ if __name__ == "__main__":
             yt.actualizar_pagina()
             titulo, hora, duracion = yt.comprobar_titulo_hora_duracion_ultimo_video()
             print(f'Titulo: {titulo}   Hora: {hora}   Duracion: {duracion}')
-            if hora >= 45 and titulo not in dic_videos:
+            if hora >= 45 and hora <= 60 and titulo not in dic_videos:
                 time_from_last_video = yt.obtener_dia_subida_penultimo_video()
                 print(f'Last video uploaded: {time_from_last_video}')
                 n_subs = yt.obtener_num_subs()
@@ -26,9 +26,9 @@ if __name__ == "__main__":
                 yt.entrar_en_ultimo_video()
                 n_views, n_likes, n_commen = yt.obtener_estadisticas_video()
                 dic_videos[titulo] = [n_subs,n_views,n_commen,time_from_last_video,round(n_likes/n_views,3)]
-                with open('output/dataset_monitor.txt', 'a') as f:
+                with open('/home/sergio/Documents/btb_monitoring/output/dataset_monitor.txt', 'a') as f:
                     f.write(f'{n_subs},{n_views},{n_commen},{round(time_from_last_video, 2)},{round(n_likes/n_views,3)}\n')
-                with open('output/videos_analyzed.txt', 'a') as f:
+                with open('/home/sergio/Documents/btb_monitoring/output/videos_analyzed.txt', 'a') as f:
                     f.write(f'{titulo}\n')
                 yt.volver_al_canal()
         time.sleep(5)

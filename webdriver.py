@@ -7,6 +7,7 @@ from selenium.webdriver.common.desired_capabilities import DesiredCapabilities
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 import urllib
+from selenium.webdriver.firefox.firefox_binary import FirefoxBinary
 
 class Driver():
 
@@ -22,7 +23,7 @@ class Driver():
         path = os.path.abspath(os.getcwd())
         options = webdriver.FirefoxOptions()
         options.add_argument('--disable-logging')
-        w = webdriver.Firefox(f"{path}/")
+        w = webdriver.Firefox(executable_path="/home/sergio/Documents/btb_monitoring/geckodriver")
         w.maximize_window()
         return w
 
@@ -41,7 +42,7 @@ class YouTube(Driver):
     def __init__(self, puerto=None):
 
         def leer_urls():
-            f = open('input/canales.txt', 'r')
+            f = open('/home/sergio/Documents/btb_monitoring/input/canales.txt', 'r')
             return [canal.strip() for canal in f.readlines()]
 
 
@@ -96,13 +97,27 @@ class YouTube(Driver):
             pass
         else:
             value = -1
-        elems = self.browser.find_elements(By.CLASS_NAME,"style-scope.ytd-thumbnail-overlay-time-status-renderer")
+        time.sleep(3)
+        i = 0
+        while(1):
+            if i == 5:
+                print("Comprobar titulo: While 1: No llegó a cargar la pagin para clickar en video")
+                sys.exit(0)
+            try:
+                elems = self.browser.find_elements(By.CLASS_NAME,
+                                                   "style-scope.ytd-thumbnail-overlay-time-status-renderer")
+                break
+            except:
+                time.sleep(3)
+                i += 1
+                continue
         minutes = seconds = None
         for elem in elems:
             if ':' in elem.text:
                 minutes = int(elem.text.split(':')[0])*60
                 seconds = int(elem.text.split(':')[1])
                 break
+
         titulo = self.browser.find_element(By.CLASS_NAME, 'yt-simple-endpoint.style-scope.ytd-grid-video-renderer').text
 
         return titulo, value, minutes+seconds
@@ -129,7 +144,7 @@ class YouTube(Driver):
         range = time_.split(' ')[-2]
         if "hour" in range:
             value /= 60
-        elif "days" in range:
+        elif "day" in range:
             pass
         elif "week" in range:
             value *= 7
@@ -193,10 +208,22 @@ class YouTube(Driver):
         """
         time.sleep(3)
         self.browser.execute_script("window.scrollTo(0,500)")
-        time.sleep(3)
-        n_comments = int(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-comments-header-renderer')
-                   .text.split('\n')[0]
-                   .split(' ')[0])
+        time.sleep(5)
+        i = 0
+        while(1):
+            if i == 5:
+                print("Obtener estadisticas: primer while(1) - No llegó a cargar la pagin para clickar en video")
+                sys.exit(0)
+            try:
+                n_comments = int(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-comments-header-renderer')
+                                 .text.split('\n')[0]
+                                 .split(' ')[0])
+                break
+            except:
+                self.browser.execute_script("window.scrollTo(0,500)")
+                time.sleep(3)
+                i += 1
+                continue
         n_views = int(self.browser.find_element(By.CLASS_NAME, 'view-count.style-scope.ytd-video-view-count-renderer')
                     .text.split(' ')[0].replace(',',''))
 
