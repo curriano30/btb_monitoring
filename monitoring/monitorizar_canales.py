@@ -18,8 +18,10 @@ if __name__ == "__main__":
             yt.actualizar_pagina()
             titulo, hora, duracion = yt.comprobar_titulo_hora_duracion_ultimo_video()
             print(f'Titulo: {titulo}   Hora: {hora}   Duracion: {duracion}')
-            if hora >= 45 and hora <= 60 and titulo not in dic_videos:
+            if hora >= 45 and hora <= 60 and titulo not in dic_videos and duracion > 100:
                 time_from_last_video = yt.obtener_dia_subida_penultimo_video()
+                if time_from_last_video == -1:
+                    continue
                 print(f'Last video uploaded: {time_from_last_video}')
                 n_subs = yt.obtener_num_subs()
                 print(f'Num subs: {n_subs}')

@@ -63,14 +63,14 @@ class YouTube(Driver):
         time.sleep(3)
         i = 0
         while(1):
-            if i == 5:
-                print("No llegó a cargar la pagin para clickar en video")
+            if i == 10:
+                print("actualizar pagina: No llegó a cargar la pagin para clickar en video")
                 sys.exit(0)
             try:
                 elem = self.browser.find_element(By.CLASS_NAME,'style-scope.ytd-c4-tabbed-header-renderer.iron-selected')
                 break
             except:
-                time.sleep(3)
+                time.sleep(4)
                 i += 1
                 continue
         elem.click()
@@ -87,8 +87,9 @@ class YouTube(Driver):
         except:
             # videos que se reproducen en online
             return -1, -1, -1
-        value = int(time_.split(' ')[0])
-        range = time_.split(' ')[1]
+
+        value = int(time_.split(' ')[-3])
+        range = time_.split(' ')[-2]
         if range == "seconds":
             value /= 60
         elif "hour" in range:
@@ -140,8 +141,12 @@ class YouTube(Driver):
         time.sleep(2)
         details = self.browser.find_elements(By.ID, 'details')[1].text
         time_ = details.split('\n')[2]
-        value = int(time_.split(' ')[-3])
-        range = time_.split(' ')[-2]
+        try:
+            value = int(time_.split(' ')[-3])
+            range = time_.split(' ')[-2]
+        except:
+            return -1
+
         if "hour" in range:
             value /= 60
         elif "day" in range:
@@ -166,7 +171,9 @@ class YouTube(Driver):
             value = float(details.split(' ')[0][:-1])
             unidad = details.split(' ')[0][-1]
             if 'M' in unidad:
-                 value = value * 1000000
+                value = value * 1000000
+            elif 'K' in unidad:
+                value = value * 1000
         return int(value)
 
     def entrar_en_ultimo_video(self):
@@ -211,7 +218,7 @@ class YouTube(Driver):
         time.sleep(5)
         i = 0
         while(1):
-            if i == 5:
+            if i == 10:
                 print("Obtener estadisticas: primer while(1) - No llegó a cargar la pagin para clickar en video")
                 sys.exit(0)
             try:
