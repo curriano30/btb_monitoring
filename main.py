@@ -3,6 +3,16 @@ import time
 import pyautogui
 
 import mouse
+from decision import check_si_cumple_hora_y_duracion, aplica_comentario
+from webdriver import Driver, YouTube
+import deepl_api as da
+from canal import Canal
+
+
+"""
+import time
+
+import mouse
 from decision import check_si_cumple_hora_y_duracion
 from webdriver import Driver, YouTube
 import deepl_api as da
@@ -10,31 +20,55 @@ from canal import Canal
 
 if __name__ == "__main__":
 
+    dic_videos = {}
     yt = YouTube()
-    canales = ['https://www.youtube.com/c/elrubiusOMG/videos','https://www.youtube.com/c/Paracetamor', 'https://www.youtube.com/user/byCalitos79/videos']
-    for canal in canales:
-        yt.browser.get(canal)
-        yt.actualizar_pagina()
-        hora, duracion = yt.comprobar_hora_duracion_ultimo_video()
-        if check_si_cumple_hora_y_duracion(hora, duracion):
-            yt.entrar_en_ultimo_video()
-            top_comment = yt.obtener_top_comentario()
-            print(top_comment)
-            top_comment = da.reescribir_comentario(top_comment)
-            print(top_comment)
-            mouse.escribir_comentario(yt.browser.current_url, top_comment)
+    yt.abrir_pestanas()
+    while(1):
+        for window in yt.browser.window_handles:
+            print('WINDOW: ' +  window)
+            yt.browser.switch_to.window(window)
+            yt.actualizar_pagina()
+            titulo, hora, duracion = yt.comprobar_titulo_hora_duracion_ultimo_video()
+            print(f'Titulo: {titulo}   Hora: {hora}   Duracion: {duracion}')
+            if hora >= 45 and hora <= 60 and titulo not in dic_videos and duracion > 100:
+                time_from_last_video = yt.obtener_dia_subida_penultimo_video()
+                if time_from_last_video == -1:
+                    continue
+                print(f'Last video uploaded: {time_from_last_video}')
+                n_subs = yt.obtener_num_subs()
+                print(f'Num subs: {n_subs}')
+                yt.entrar_en_ultimo_video()
+                n_views, n_likes, n_commen = yt.obtener_estadisticas_video()
+                dic_videos[titulo] = [n_subs,n_views,n_commen,time_from_last_video,round(n_likes/n_views,3)]
+                with open('/home/sergio/Documents/btb_monitoring/output/dataset_monitor.txt', 'a') as f:
+                    f.write(f'{n_subs},{n_views},{n_commen},{round(time_from_last_video, 2)},{round(n_likes/n_views,3)}\n')
+                with open('/home/sergio/Documents/btb_monitoring/output/videos_analyzed.txt', 'a') as f:
+                    f.write(f'{titulo}\n')
+                yt.volver_al_canal()
+        time.sleep(5)
 
-    # pyautogui.moveTo(500,500)
-    # yt = None
-    # canales = ['https://www.youtube.com/c/elrubiusOMG/videos','https://www.youtube.com/c/Paracetamor', 'https://www.youtube.com/user/byCalitos79/videos']
-    # for canal in canales:
-    #     mouse.escribir_comentario('https://www.youtube.com/watch?v=h0EmwU7upVY', 'hola', pos_x=10, pos_y=10)
-    #     yt.browser.get(canal)
-    #     hora, duracion = yt.comprobar_hora_duracion_ultimo_video()
-    #     yt.actualizar_pagina()
-    #     yt.entrar_en_ultimo_video()
-    #     x, y = yt.obtener_x_y_from_comment_and_submit()
-    #     top_comment = yt.obtener_top_comentario()
-    #     print(top_comment)
-    #     top_comment = da.reescribir_comentario(top_comment)
-    #     print(top_comment)
+"""
+if __name__ == "__main__":
+
+    yt = YouTube()
+    yt.abrir_pestanas()
+    dic_videos = {}
+
+    while(1):
+        for window in yt.browser.window_handles:
+            yt.browser.switch_to.window(window)
+            yt.actualizar_pagina()
+            titulo, hora, duracion = yt.comprobar_titulo_hora_duracion_ultimo_video()
+            if hora >= 45 and hora <= 60 and titulo not in dic_videos and duracion > 100:
+                time_from_last_video = yt.obtener_dia_subida_penultimo_video()
+                if time_from_last_video == -1:
+                    continue
+                n_subs = yt.obtener_num_subs()
+                yt.entrar_en_ultimo_video()
+                n_views, n_likes, n_commen = yt.obtener_estadisticas_video()
+                likes_ratio = round(n_likes / n_views, 3)
+                if aplica_comentario(n_subs, n_views, n_commen, time_from_last_video, likes_ratio):
+                    top_comment = yt.obtener_top_comentario()
+                    top_comment = da.reescribir_comentario(top_comment)
+                    mouse.escribir_comentario(yt.browser.current_url, top_comment)
+
