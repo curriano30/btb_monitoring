@@ -10,6 +10,8 @@ urls = ["https://www.youtube.com/watch?v=wOzdGoSKfw0", "https://www.youtube.com/
 
 def abir_video(url):
     webbrowser.open(url)
+    time.sleep(20)
+
 
 def escribir_comentario(url, comment, pos_x=None, pos_y=None):
     time_to_sleep = 3
@@ -25,7 +27,11 @@ def escribir_comentario(url, comment, pos_x=None, pos_y=None):
 
 def localizacion_imagen_perfil(url):
     time_to_sleep = 5
-    time.sleep(time_to_sleep)  # Go to example.com
+    time.sleep(time_to_sleep)
+    pyautogui.moveTo(153, 200)
+    time.sleep(1)
+    pyautogui.click()
+    # Go to example.com
     pyautogui.scroll(-3)
     time.sleep(time_to_sleep)
     j = 0

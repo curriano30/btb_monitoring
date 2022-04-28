@@ -3,10 +3,9 @@ import time
 import pyautogui
 
 import mouse
-from decision import check_si_cumple_hora_y_duracion, aplica_comentario
-from webdriver import Driver, YouTube
+from decision import aplica_comentario
+from webdriver import YouTube
 import deepl_api as da
-from canal import Canal
 
 
 """
@@ -48,18 +47,29 @@ if __name__ == "__main__":
         time.sleep(5)
 
 """
+
+def obtener_videos_comentados():
+    """
+    Obtiene los videos que ya han sido comentados con el fin de no volver a comentarlos.
+    :return:
+    """
+    with open("input/videos_comentados.txt", "r") as f:
+        videos = [video.strip() for video in f.readlines()]
+
+    return videos
+
 if __name__ == "__main__":
 
     yt = YouTube()
     yt.abrir_pestanas()
-    dic_videos = {}
+    videos_comentados = obtener_videos_comentados()
 
     while(1):
         for window in yt.browser.window_handles:
             yt.browser.switch_to.window(window)
             yt.actualizar_pagina()
             titulo, hora, duracion = yt.comprobar_titulo_hora_duracion_ultimo_video()
-            if hora >= 45 and hora <= 60 and titulo not in dic_videos and duracion > 100:
+            if hora >= 1 and hora <= 2 and titulo not in videos_comentados and duracion > 100:
                 time_from_last_video = yt.obtener_dia_subida_penultimo_video()
                 if time_from_last_video == -1:
                     continue
@@ -69,6 +79,18 @@ if __name__ == "__main__":
                 likes_ratio = round(n_likes / n_views, 3)
                 if aplica_comentario(n_subs, n_views, n_commen, time_from_last_video, likes_ratio):
                     top_comment = yt.obtener_top_comentario()
+                    if top_comment == '':
+                        continue
+                    url = yt.browser.current_url
+                    yt.volver_al_canal()
                     top_comment = da.reescribir_comentario(top_comment)
-                    mouse.escribir_comentario(yt.browser.current_url, top_comment)
+                    mouse.escribir_comentario(url, top_comment)
+                    with open("input/videos_comentados.txt", "a") as f:
+                        f.write(titulo)
+                    videos_comentados.append(titulo)
+                else:
+                    yt.volver_al_canal()
+                time.sleep(15*60)
+
+
 

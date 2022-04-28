@@ -37,6 +37,7 @@ def traducir_espanol_a_ingles(text):
     return translator.translate_text(text, target_lang="EN-GB").text
 
 def reescribir_comentario(text):
+
     text = traducir_espanol_a_ingles(text)
     return traducir_ingles_a_espanol(text)
 

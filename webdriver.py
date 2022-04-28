@@ -23,7 +23,7 @@ class Driver():
         path = os.path.abspath(os.getcwd())
         options = webdriver.FirefoxOptions()
         options.add_argument('--disable-logging')
-        w = webdriver.Firefox(executable_path="/home/sergio/Documents/btb_monitoring/geckodriver")
+        w = webdriver.Firefox(executable_path="/home/sergio/ProyectosDocker/tutorial/geckodriver")
         w.maximize_window()
         return w
 
@@ -42,7 +42,7 @@ class YouTube(Driver):
     def __init__(self, puerto=None):
 
         def leer_urls():
-            f = open('/home/sergio/Documents/btb_monitoring/input/canales.txt', 'r')
+            f = open('/home/sergio/ProyectosDocker/tutorial/input/canales.txt', 'r')
             return [canal.strip() for canal in f.readlines()]
 
 
@@ -82,46 +82,54 @@ class YouTube(Driver):
         """
         time.sleep(3)
         details = self.browser.find_element(By.ID, 'details').text
-        try:
-            time_ = details.split('\n')[2]
-        except:
-            # videos que se reproducen en online
+        if 'Premieres' in details:
             return -1, -1, -1
+        elems = self.browser.find_elements(By.CLASS_NAME, 'style-scope.ytd-grid-renderer')
 
-        value = int(time_.split(' ')[-3])
-        range = time_.split(' ')[-2]
-        if range == "seconds":
-            value /= 60
-        elif "hour" in range:
-            value *= 60
-        elif "minutes" in range:
-            pass
-        else:
-            value = -1
-        time.sleep(3)
-        i = 0
-        while(1):
-            if i == 5:
-                print("Comprobar titulo: While 1: No llegó a cargar la pagin para clickar en video")
-                sys.exit(0)
-            try:
-                elems = self.browser.find_elements(By.CLASS_NAME,
-                                                   "style-scope.ytd-thumbnail-overlay-time-status-renderer")
+        # obtenemos el primer video
+        for elem in elems:
+            if elem.text == '' or len(elem.text.split('\n')) > 4:
+                continue
+            else:
                 break
-            except:
-                time.sleep(3)
+        # si es una longitud de 3 es que es un short
+        if len(elem.text.split('\n')) == 3:
+            return -1, -1, -1
+        i = 0
+        for line in elem.text.split('\n'):
+            if i == 0:
+                minutes = int(line.split(':')[0])*60
+                seconds = int(line.split(':')[1])
+                duracion = minutes + seconds
+                i += 1
+            elif i == 1:
+                titulo = line
+                i += 1
+            elif i == 2:
                 i += 1
                 continue
-        minutes = seconds = None
-        for elem in elems:
-            if ':' in elem.text:
-                minutes = int(elem.text.split(':')[0])*60
-                seconds = int(elem.text.split(':')[1])
-                break
+            elif i == 3:
+                if 'streamed' in line.lower() or 'premiere' in line.lower():
+                    return -1, -1, -1
+                value = int(line.split(' ')[-3])
+                range = line.split(' ')[-2]
+                if "second" in range:
+                    value = 0
+                elif "minutes" in range:
+                    value = 0
+                elif "hour" in range:
+                    pass
+                elif "day" in range:
+                    value *= 24
+                else:
+                    value = 7*24
+                video_previo = value
+                i += 1
 
-        titulo = self.browser.find_element(By.CLASS_NAME, 'yt-simple-endpoint.style-scope.ytd-grid-video-renderer').text
-
-        return titulo, value, minutes+seconds
+        try:
+            return titulo, video_previo, duracion
+        except:
+            return -1, -1, -1
 
     def volver_al_canal(self):
         """
@@ -131,7 +139,10 @@ class YouTube(Driver):
         time.sleep(3)
         self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-video-owner-renderer').click()
         time.sleep(5)
-        self.browser.find_elements(By.CLASS_NAME, 'style-scope.tp-yt-paper-tab')[1].click()
+        try:
+            self.browser.find_elements(By.CLASS_NAME, 'style-scope.tp-yt-paper-tab')[1].click()
+        except:
+            print("A")
 
     def obtener_dia_subida_penultimo_video(self):
         """
@@ -218,7 +229,9 @@ class YouTube(Driver):
         time.sleep(5)
         i = 0
         while(1):
-            if i == 10:
+            if i == 12:
+                self.browser.get(self.browser.current_url)
+                time.sleep(5)
                 print("Obtener estadisticas: primer while(1) - No llegó a cargar la pagin para clickar en video")
                 sys.exit(0)
             try:
@@ -231,8 +244,11 @@ class YouTube(Driver):
                 time.sleep(3)
                 i += 1
                 continue
-        n_views = int(self.browser.find_element(By.CLASS_NAME, 'view-count.style-scope.ytd-video-view-count-renderer')
-                    .text.split(' ')[0].replace(',',''))
+        try:
+            n_views = int(self.browser.find_element(By.CLASS_NAME, 'view-count.style-scope.ytd-video-view-count-renderer')
+                        .text.split(' ')[0].replace(',',''))
+        except:
+            print("A")
 
         try:
             n_likes = int(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-video-primary-info-renderer')
@@ -250,7 +266,7 @@ class YouTube(Driver):
         """
         time.sleep(3)
         self.browser.execute_script("window.scrollTo(0,500)")
-        time.sleep(2)
+        time.sleep(10)
         elems = self.browser.find_elements(By.ID, 'comment')
         final_comments = set()
         i = 0

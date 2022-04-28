@@ -9,16 +9,19 @@ def check_si_cumple_hora_y_duracion(hora, duracion):
     return False
 
 def aplica_comentario(num_subs, num_visitas, num_comment, video_previo, likes_commen):
-
+    if num_comment < 10:
+        return False
     num_subs_ = (1-math.e**-(0.00002*num_subs))
     num_visitas_ = (1-math.e**-(0.001*num_visitas))
     num_comment_ = (1-math.e**-(0.00015*num_comment**3))
-    video_previo_ = 0.7*(1-math.e**-(3*video_previo**2))+0.3
+    video_previo_ = (1-math.e**-(0.05*video_previo))
     likes_commen_ = 0.8*(1-math.e**-(1000*likes_commen**3))+0.2
 
-    prob =  num_subs_*num_visitas_*num_comment_*video_previo_*likes_commen_
+    prob = num_subs_*num_visitas_*num_comment_*video_previo_*likes_commen_
+    flag = random.uniform(0, 1) <=  prob
+    print("La prob de entrar es: " + str(prob) + str(flag))
 
-    return random.uniform(0, 1) <= prob
+    return flag
 
 
 if __name__ == "__main__":
