@@ -23,7 +23,7 @@ class Driver():
         path = os.path.abspath(os.getcwd())
         options = webdriver.FirefoxOptions()
         options.add_argument('--disable-logging')
-        w = webdriver.Firefox(executable_path="/home/sergio/ProyectosDocker/tutorial/geckodriver")
+        w = webdriver.Firefox(executable_path="/home/sergio/Documents/btb_monitoring/geckodriver")
         w.maximize_window()
         return w
 
@@ -42,7 +42,7 @@ class YouTube(Driver):
     def __init__(self, puerto=None):
 
         def leer_urls():
-            f = open('/home/sergio/ProyectosDocker/tutorial/input/canales.txt', 'r')
+            f = open('/home/sergio/Documents/btb_monitoring/input/canales.txt', 'r')
             return [canal.strip() for canal in f.readlines()]
 
 

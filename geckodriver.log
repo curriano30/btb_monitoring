@@ -6855,3 +6855,770 @@ JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6v
 Exiting due to channel error.
 Exiting due to channel error.
 Exiting due to channel error.
+1651178217815	geckodriver	INFO	Listening on 127.0.0.1:52501
+1651178218311	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "35403" "-no-remote" "-profile" "/tmp/rust_mozprofilepqezRr"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651178222305	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilepqezRr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:35403/devtools/browser/870db775-9017-4d59-826d-3e45953d10a4
+1651178228025	Marionette	INFO	Listening on port 43549
+1651178228148	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651178233303	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-28T20:37:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-28T20:37:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-28T20:37:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-28T20:37:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 26920, MediaDecoderStateMachine #1] WARNING: Decoder=7f9c7a806700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 26920, MediaDecoderStateMachine #1] WARNING: Decoder=7f9c7a806a00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 26920, MediaDecoderStateMachine #1] WARNING: Decoder=7f9c7a9f7100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 26920, MediaDecoderStateMachine #1] WARNING: Decoder=7f9c7a807300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651178303554	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1651178335039	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651178344162	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/nzSewf41wl2BVJkwxVV_7a6HO8nVCXbzOneYH_Xeelk.js line 1 > eval line 3298 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+JavaScript warning: https://pagead2.googlesyndication.com/bg/nzSewf41wl2BVJkwxVV_7a6HO8nVCXbzOneYH_Xeelk.js line 1 > eval line 7191 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/nzSewf41wl2BVJkwxVV_7a6HO8nVCXbzOneYH_Xeelk.js line 1 > eval line 27 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651181269340	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/nzSewf41wl2BVJkwxVV_7a6HO8nVCXbzOneYH_Xeelk.js line 1 > eval line 1972 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript error: chrome://browser/content/browser.js, line 8026: uncaught exception: undefined
+1651181668729	Marionette	INFO	Stopped listening on port 43549
+JavaScript error: chrome://remote/content/marionette/cert.js, line 55: NS_ERROR_NOT_AVAILABLE: Component returned failure code: 0x80040111 (NS_ERROR_NOT_AVAILABLE) [nsICertOverrideService.setDisableAllSecurityChecksAndLetAttackersInterceptMyData]
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+1651316526810	geckodriver	INFO	Listening on 127.0.0.1:59203
+1651316527301	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37507" "-no-remote" "-profile" "/tmp/rust_mozprofileUct9Cu"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651316529791	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileUct9Cu/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37507/devtools/browser/950f1bfc-7676-440e-a9dd-ed27d619d7bb
+1651316534423	Marionette	INFO	Listening on port 46827
+1651316534508	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651316538610	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T11:02:18Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:02:18Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:02:18Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:02:18Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 2702, MediaDecoderStateMachine #1] WARNING: Decoder=7fdedc23f700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2702, MediaDecoderStateMachine #1] WARNING: Decoder=7fdedc01ea00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2702, MediaDecoderStateMachine #1] WARNING: Decoder=7fdedc01e400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2702, MediaDecoderStateMachine #1] WARNING: Decoder=7fdedc01ff00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651316580238	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651316620437	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316650863	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316660705	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 211 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651316704768	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316744265	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316770339	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316776734	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 7599 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651316845862	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651316894521	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 2503 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651317038434	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 3491 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651317387078	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+1651317825383	geckodriver	INFO	Listening on 127.0.0.1:44551
+1651317825890	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52109" "-no-remote" "-profile" "/tmp/rust_mozprofile978fOa"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651317828540	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile978fOa/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52109/devtools/browser/54b93199-09a2-412f-ab0d-fa06e6acd235
+1651317832587	Marionette	INFO	Listening on port 43151
+1651317832674	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651317836787	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T11:23:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:23:56Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 6737, MediaDecoderStateMachine #1] WARNING: Decoder=7f17453df400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 6737, MediaDecoderStateMachine #1] WARNING: Decoder=7f17453e0000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651317880606	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651317922208	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6048 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651318016667	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651318024835	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1139 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651318229623	geckodriver	INFO	Listening on 127.0.0.1:48537
+1651318230114	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "52593" "-no-remote" "-profile" "/tmp/rust_mozprofilef1Nq7b"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651318234122	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilef1Nq7b/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:52593/devtools/browser/c771f9ca-3686-42f0-9282-a589eb992d89
+1651318240295	Marionette	INFO	Listening on port 41151
+1651318240457	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651318242266	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T11:30:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:30:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:30:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:30:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+WARNING: At least one completion condition is taking too long to complete. Conditions: [{"name":"SessionStore: flushing all windows","state":{"total":1,"current":0},"filename":"resource:///modules/sessionstore/SessionStore.jsm","lineNumber":2107,"stack":["resource:///modules/sessionstore/SessionStore.jsm:ssi_onQuitApplicationGranted:2107","resource:///modules/sessionstore/SessionStore.jsm:ssi_observe:1023"]}] Barrier: quit-application-granted
+[Child 7544, MediaDecoderStateMachine #1] WARNING: Decoder=7fee01fb8400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7544, MediaDecoderStateMachine #1] WARNING: Decoder=7fee01fb7b00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7544, MediaDecoderStateMachine #1] WARNING: Decoder=7fee01fb8100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7544, MediaDecoderStateMachine #1] WARNING: Decoder=7fee01fb8700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1651318256904	Marionette	INFO	Stopped listening on port 43151
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PHttpChannel::Msg_DeleteSelf) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Reply_DiscardBrowsingContext) Channel error: cannot send/recv
+
+A content process crashed and MOZ_CRASHREPORTER_SHUTDOWN is set, shutting down
+1651318292284	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 4904 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651318442532	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651318450317	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6105 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651318574434	geckodriver	INFO	Listening on 127.0.0.1:55969
+1651318574940	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "44009" "-no-remote" "-profile" "/tmp/rust_mozprofileXsu2zW"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651318578060	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileXsu2zW/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:44009/devtools/browser/3d203c3e-1e96-4bdf-badb-b9d1a91ebb20
+1651318582602	Marionette	INFO	Listening on port 46453
+1651318582716	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651318587734	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T11:36:27Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:36:27Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:36:27Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T11:36:27Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 8343, MediaDecoderStateMachine #1] WARNING: Decoder=7fa9a593db00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8343, MediaDecoderStateMachine #1] WARNING: Decoder=7fa9abdb6700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8343, MediaDecoderStateMachine #1] WARNING: Decoder=7fa9ab9ac500 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8343, MediaDecoderStateMachine #1] WARNING: Decoder=7fa9abd56700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651318609600	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1066 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 7725 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651319738705	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+Exiting due to channel error.
+Exiting due to channel error.
+1651320149946	geckodriver	INFO	Listening on 127.0.0.1:54381
+1651320150452	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37645" "-no-remote" "-profile" "/tmp/rust_mozprofilezTmmwa"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651320153365	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilezTmmwa/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37645/devtools/browser/d69fcccd-41f5-4909-8172-40848ddef92b
+1651320157392	Marionette	INFO	Listening on port 33845
+1651320157521	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651320162047	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T12:02:42Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:02:42Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:02:42Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:02:42Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 9650, MediaDecoderStateMachine #1] WARNING: Decoder=7fabf35ed700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9650, MediaDecoderStateMachine #1] WARNING: Decoder=7fabf35ed400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9650, MediaDecoderStateMachine #1] WARNING: Decoder=7fabf35ee900 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9650, MediaDecoderStateMachine #1] WARNING: Decoder=7fabf35ef800 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651320185312	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1570 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 5864 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651320568788	geckodriver	INFO	Listening on 127.0.0.1:44673
+1651320569286	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39585" "-no-remote" "-profile" "/tmp/rust_mozprofileAn6w6R"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651320573693	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileAn6w6R/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39585/devtools/browser/379c8fa3-63c3-445c-825b-b2bacf60c195
+1651320579884	Marionette	INFO	Listening on port 37757
+1651320580021	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[2022-04-30T12:09:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:09:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:09:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:09:46Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1651320586165	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 11008, MediaDecoderStateMachine #1] WARNING: Decoder=7fed1b043100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 11008, MediaDecoderStateMachine #1] WARNING: Decoder=7fed1b045b00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 11008, MediaDecoderStateMachine #1] WARNING: Decoder=7fed1c152700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 11008, MediaDecoderStateMachine #1] WARNING: Decoder=7fed1b046d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651320674057	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651321501549	geckodriver	INFO	Listening on 127.0.0.1:44317
+1651321502050	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "54221" "-no-remote" "-profile" "/tmp/rust_mozprofilexnXcYo"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651321506847	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilexnXcYo/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:54221/devtools/browser/66e0cbcf-2afa-4588-9e8f-7d3677905b84
+1651321514499	Marionette	INFO	Listening on port 34063
+1651321514578	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651321520455	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T12:25:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:25:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:25:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T12:25:20Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 2437, MediaDecoderStateMachine #1] WARNING: Decoder=7f066c0f2a00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2437, MediaDecoderStateMachine #1] WARNING: Decoder=7f066aa55400 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2437, MediaDecoderStateMachine #1] WARNING: Decoder=7f066aa56000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 2437, MediaDecoderStateMachine #1] WARNING: Decoder=7f066aa56300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651321543039	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6534 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1494 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1125 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 4915 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651323925343	Marionette	INFO	Stopped listening on port 34063
+1651323928131	geckodriver	INFO	Listening on 127.0.0.1:42971
+1651323928636	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "57317" "-no-remote" "-profile" "/tmp/rust_mozprofilewXnTd3"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651323931372	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilewXnTd3/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:57317/devtools/browser/4a6f97e4-9a43-4766-8f95-740dbf7af785
+1651323935257	Marionette	INFO	Listening on port 42045
+1651323935399	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651323939755	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T13:05:39Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:05:39Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:05:39Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:05:39Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 4209, MediaDecoderStateMachine #1] WARNING: Decoder=7fd984e27d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 4209, MediaDecoderStateMachine #1] WARNING: Decoder=7fd984e28900 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 4209, MediaDecoderStateMachine #1] WARNING: Decoder=7fd984e28000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 4209, MediaDecoderStateMachine #1] WARNING: Decoder=7fd984e27a00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651323956287	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6308 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 7578 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1651324322936	geckodriver	INFO	Listening on 127.0.0.1:37643
+1651324322948	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "49163" "-no-remote" "-profile" "/tmp/rust_mozprofileZbegqw"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651324325609	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileZbegqw/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:49163/devtools/browser/58629660-91d0-45ef-9717-4d0af34400ed
+1651324329583	Marionette	INFO	Listening on port 33593
+1651324329714	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651324333698	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T13:12:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:12:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:12:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:12:13Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 5514, MediaDecoderStateMachine #1] WARNING: Decoder=7f38d2bdf100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 5514, MediaDecoderStateMachine #1] WARNING: Decoder=7f38d2be0000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 5514, MediaDecoderStateMachine #1] WARNING: Decoder=7f38d2be0300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 5514, MediaDecoderStateMachine #1] WARNING: Decoder=7f38d2bdfa00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651324341708	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651324342392	Marionette	WARN	Ignoring event 'DOMContentLoaded' because document has an invalid readyState of 'complete'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 4186 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6858 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651324846074	geckodriver	INFO	Listening on 127.0.0.1:37315
+1651324846089	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "37655" "-no-remote" "-profile" "/tmp/rust_mozprofile79TiFr"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651324848993	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile79TiFr/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:37655/devtools/browser/1ed8b1ac-745f-4837-a3ea-e29d70a5e00c
+1651324854047	Marionette	INFO	Listening on port 40333
+1651324854179	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651324859441	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T13:20:59Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:20:59Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:20:59Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:20:59Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 7036, MediaDecoderStateMachine #1] WARNING: Decoder=7fef21297000 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7036, MediaDecoderStateMachine #1] WARNING: Decoder=7fef21297300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7036, MediaDecoderStateMachine #1] WARNING: Decoder=7fef21296a00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 7036, MediaDecoderStateMachine #1] WARNING: Decoder=7fef21296d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651324887621	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651324893450	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 3741 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651325318427	geckodriver	INFO	Listening on 127.0.0.1:37231
+1651325318945	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "39083" "-no-remote" "-profile" "/tmp/rust_mozprofile0RlWez"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651325322811	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofile0RlWez/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:39083/devtools/browser/d3d29679-1cd0-4895-9900-e8ef6789c76e
+1651325329573	Marionette	INFO	Listening on port 37535
+1651325329679	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+[2022-04-30T13:28:55Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:28:55Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:28:55Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:28:55Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+1651325335234	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[Child 8341, MediaDecoderStateMachine #1] WARNING: Decoder=7ff20955b100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8341, MediaDecoderStateMachine #1] WARNING: Decoder=7ff208a62700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8341, MediaDecoderStateMachine #1] WARNING: Decoder=7ff20955bd00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 8341, MediaDecoderStateMachine #1] WARNING: Decoder=7ff208a62d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651325361192	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+1651325368439	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651325375749	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:235:19
+TimedPromise@chrome://remote/content/marionette/sync.js:220:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 1425 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 6733 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1651325930148	Marionette	INFO	Stopped listening on port 37535
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+1651325932959	Marionette	INFO	Stopped listening on port 40333
+1651325934455	geckodriver	INFO	Listening on 127.0.0.1:50811
+1651325934961	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "40309" "-no-remote" "-profile" "/tmp/rust_mozprofiletMHyHG"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651325937785	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofiletMHyHG/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:40309/devtools/browser/e8c118b8-8a7b-4c52-b4fe-9ae547ebd0a6
+1651325941577	Marionette	INFO	Listening on port 34245
+1651325941634	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651325946029	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T13:39:06Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:39:06Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:39:06Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:39:06Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 9818, MediaDecoderStateMachine #1] WARNING: Decoder=7fcfe3c1d100 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9818, MediaDecoderStateMachine #1] WARNING: Decoder=7fcfdd9fc300 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9818, MediaDecoderStateMachine #1] WARNING: Decoder=7fcfdd9fc900 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 9818, MediaDecoderStateMachine #1] WARNING: Decoder=7fcfe3c1d700 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+1651325967331	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+1651326325628	Marionette	INFO	Stopped listening on port 34245
+1651326335131	geckodriver	INFO	Listening on 127.0.0.1:54767
+1651326335140	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "41151" "-no-remote" "-profile" "/tmp/rust_mozprofileo5U1qE"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651326337494	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofileo5U1qE/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:41151/devtools/browser/f23e9ab3-f494-4a00-9b82-62cd82f6a45d
+1651326341006	Marionette	INFO	Listening on port 38443
+1651326341100	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+1651326345125	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+[2022-04-30T13:45:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:45:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[2022-04-30T13:45:45Z ERROR mp4parse] Found 2 nul bytes in "\u{0}\u{0}"
+[Child 10252, MediaDecoderStateMachine #1] WARNING: Decoder=7f8c6403a500 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 10252, MediaDecoderStateMachine #1] WARNING: Decoder=7f8c5f059d00 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+[Child 10252, MediaDecoderStateMachine #1] WARNING: Decoder=7f8c5cb26600 Decode error: NS_ERROR_DOM_MEDIA_FATAL_ERR (0x806e0005) - Error no decoder found for audio/mp4a-latm: file /build/firefox-gifbvm/firefox-99.0+build2/dom/media/MediaDecoderStateMachine.cpp:3577
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Parent][PBackgroundParent] Error: RunMessage(msgname=PBackgroundIDBDatabase::Msg_Close) Channel closing: too late to send/recv, messages will be lost
+
+1651326364461	Marionette	WARN	Ignoring event 'pageshow' because document has an invalid readyState of 'uninitialized'.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 2364 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://pagead2.googlesyndication.com/bg/IgzTz77AOrXN1Rxxl6vifLkaj7bdZbRVkxAQRHJ0_jQ.js line 1 > eval line 3649 > eval line 1 > eval line 1 > eval, line 1: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1651326751096	Marionette	INFO	Stopped listening on port 38443
+
+###!!! [Parent][PImageBridgeParent] Error: RunMessage(msgname=PImageBridge::Msg_WillClose) Channel closing: too late to send/recv, messages will be lost
+
+1651326753532	Marionette	INFO	Stopped listening on port 33593
+
+###!!! [Parent][PContentParent] Error: Send(msgname=PContent::Msg_DestroyBrowsingContextGroup) Closed channel: cannot send/recv
+
+
+###!!! [Child][PContentChild] Error: Send(msgname=PBrowser::Msg___delete__) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PHttpChannel::Msg_DeleteSelf) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][PContentChild] Error: RunMessage(msgname=PContent::Reply_DiscardBrowsingContext) Channel closing: too late to send/recv, messages will be lost
+
+1651327155487	geckodriver	INFO	Listening on 127.0.0.1:53309
+1651327155497	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "--marionette" "--remote-debugging-port" "56429" "-no-remote" "-profile" "/tmp/rust_mozprofilecvWVMY"
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+1651327158249	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at /tmp/rust_mozprofilecvWVMY/search.json.mozlz4", (void 0)))
+DevTools listening on ws://localhost:56429/devtools/browser/73d18c25-2642-47c7-bf2f-ab14d2688092
+1651327162778	Marionette	INFO	Listening on port 46243
+1651327162872	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.

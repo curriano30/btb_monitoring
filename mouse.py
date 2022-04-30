@@ -36,29 +36,29 @@ def localizacion_imagen_perfil(url):
     time.sleep(time_to_sleep)
     j = 0
     for i in range(0, 200, 2):
-        print(pyautogui.pixel(153, 800 + i))
-        pyautogui.moveTo(153, 800 + i)
-        if pyautogui.pixel(153, 800 + i).red + pyautogui.pixel(153, 800 + i).green  > 300 and\
-                pyautogui.pixel(153, 800 + i).blue < 75 :
+        print(pyautogui.pixel(130, 500 + i))
+        pyautogui.moveTo(130, 500 + i)
+        if pyautogui.pixel(130, 500 + i).red + pyautogui.pixel(130, 500 + i).green > 300 and\
+                pyautogui.pixel(130, 500 + i).blue < 75 :
             j += 1
             if j == 2:
                 break
     time.sleep(time_to_sleep)
-    pyautogui.moveTo(250, 800 + i)
+    pyautogui.moveTo(250, 500 + i)
     time.sleep(time_to_sleep)
-    return 800+i
+    return 500+i
 
 def localizacion_boton_comentar(y):
     time_to_sleep=3
     time.sleep(time_to_sleep)
-    pyautogui.moveTo(1375, y)
+    pyautogui.moveTo(850, y)
     j = 0
-    for i in range(0, 120, 2):
-        pyautogui.moveTo(1375, y + i)
-        print(pyautogui.pixel(1375, y + i))
-        if pyautogui.pixel(1375, y + i).blue == 255:
+    for i in range(0, 120, 1):
+        pyautogui.moveTo(850, y + i)
+        print(pyautogui.pixel(850, y + i))
+        if pyautogui.pixel(850, y + i).blue == 212:
             j += 1
             if j == 5:
                 break
-    pyautogui.moveTo(1375, y + i)
+    pyautogui.moveTo(850, y + i)
 

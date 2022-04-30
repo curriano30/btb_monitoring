@@ -4,7 +4,6 @@ import mouse
 from decision import check_si_cumple_hora_y_duracion
 from webdriver import Driver, YouTube
 import deepl_api as da
-from canal import Canal
 
 if __name__ == "__main__":
 
