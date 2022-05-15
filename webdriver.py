@@ -88,10 +88,13 @@ class YouTube(Driver):
 
         # obtenemos el primer video
         for elem in elems:
-            if elem.text == '' or len(elem.text.split('\n')) > 4:
-                continue
-            else:
-                break
+            try:
+                if elem.text == '' or len(elem.text.split('\n')) > 4:
+                    continue
+                else:
+                    break
+            except:
+                return -1, -1, -1
         # si es una longitud de 3 es que es un short
         if len(elem.text.split('\n')) == 3:
             return -1, -1, -1
@@ -159,7 +162,7 @@ class YouTube(Driver):
             return -1
 
         if "hour" in range:
-            value /= 60
+            value /= 24
         elif "day" in range:
             pass
         elif "week" in range:
@@ -254,8 +257,12 @@ class YouTube(Driver):
             n_likes = int(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-video-primary-info-renderer')
                           .text.split('\n')[-4])
         except:
-            n_likes = int(float(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-video-primary-info-renderer')
-                          .text.split('\n')[-4][:-1])*1000)
+            try:
+                n_likes = int(float(self.browser.find_element(By.CLASS_NAME, 'style-scope.ytd-video-primary-info-renderer')
+                              .text.split('\n')[-4][:-1])*1000)
+            except:
+                print("algo va mal")
+
 
         return n_views, n_likes, n_comments
 

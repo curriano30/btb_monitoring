@@ -14,11 +14,11 @@ def aplica_comentario(num_subs, num_visitas, num_comment, video_previo, likes_co
     num_subs_ = (1-math.e**-(0.00002*num_subs))
     num_visitas_ = (1-math.e**-(0.001*num_visitas))
     num_comment_ = (1-math.e**-(0.00015*num_comment**3))
-    video_previo_ = (1-math.e**-(0.05*video_previo))
+    video_previo_ = (1-math.e**-(0.8*video_previo))
     likes_commen_ = 0.8*(1-math.e**-(1000*likes_commen**3))+0.2
 
     prob = num_subs_*num_visitas_*num_comment_*video_previo_*likes_commen_
-    flag = random.uniform(0, 1) <= (prob * 2)
+    flag = random.uniform(0, 1) <= (prob * 1.25)
     print("La prob de entrar es: " + str(prob) + str(flag))
 
     return flag

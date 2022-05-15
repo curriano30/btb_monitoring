@@ -51,14 +51,23 @@ def localizacion_imagen_perfil(url):
 def localizacion_boton_comentar(y):
     time_to_sleep=3
     time.sleep(time_to_sleep)
-    pyautogui.moveTo(850, y)
-    j = 0
-    for i in range(0, 120, 1):
-        pyautogui.moveTo(850, y + i)
-        print(pyautogui.pixel(850, y + i))
-        if pyautogui.pixel(850, y + i).blue == 212:
-            j += 1
-            if j == 5:
-                break
-    pyautogui.moveTo(850, y + i)
+    x = 2
+    while(x != 0):
+        try:
+            pyautogui.moveTo(850, y)
+            j = 0
+            for i in range(0, 120, 1):
+                pyautogui.moveTo(850, y + i)
+                print(pyautogui.pixel(850, y + i))
+
+                if pyautogui.pixel(850, y + i).blue == 212:
+                    j += 1
+                    if j == 5:
+                        break
+            pyautogui.moveTo(850, y + i)
+            break
+        except:
+            pyautogui.press('F11')
+            x-=1
+
 

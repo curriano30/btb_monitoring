@@ -1,3 +1,4 @@
+import sys
 import time
 
 import pyautogui
@@ -87,10 +88,12 @@ if __name__ == "__main__":
                     mouse.escribir_comentario(url, top_comment)
                     with open("input/videos_comentados.txt", "a") as f:
                         f.write(titulo)
+                        f.write("\n")
                     videos_comentados.append(titulo)
+                    sys.exit(0)
                 else:
                     yt.volver_al_canal()
-                time.sleep(15*60)
+                time.sleep(30*60)
 
 
 
